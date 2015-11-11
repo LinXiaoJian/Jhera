@@ -1,0 +1,288 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="hera管理系统">
+		<title>HERA后台</title>
+		<link rel="stylesheet" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../css/metisMenu.min.css">
+		<link rel="stylesheet" href="../../css/timeline.css">
+		<link rel="stylesheet" href="../../css/sb-admin-2.css">
+		<link rel="stylesheet" href="../../css/morris.css">
+		<link rel="stylesheet" href="../../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<script src="../../js/jquery.min.js"></script>
+		<!-- 配置文件 -->
+		<script type="text/javascript" src="../../ueditor/ueditor.config.js"></script>
+		<!-- 编辑器源码文件 -->
+		<script type="text/javascript" src="../../ueditor/ueditor.all.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="main.html">HERA</a>
+				</div>
+				<!-- /.navbar-header -->
+
+				<ul class="nav navbar-top-links navbar-right">
+					<li class="dropdown tesk">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-alerts">
+							<li>
+								<a href="#">
+									<div>
+										<i class="fa fa-tasks fa-fw"></i> 新任务
+										<span class="pull-right text-muted small">2015-07-06</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">
+									<div>
+										<i class="fa fa-file-text-o fa-fw"></i> 新申请
+										<span class="pull-right text-muted small">2015-07-06</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a class="text-center" href="#">
+									<strong>全部消息</strong>
+									<i class="fa fa-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+						<!-- /.dropdown-alerts -->
+					</li>
+					<!-- /.dropdown -->
+					<li class="dropdown user">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-user">
+							<li><a data-toggle="modal" data-target="#me"><i class="fa fa-user fa-fw"></i> 查看个人资料</a>
+							</li>
+							<li class="divider"></li>
+							<li><a href=""><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+							</li>
+						</ul>
+						<!-- /.dropdown-user -->
+					</li>
+					<!-- /.dropdown -->
+				</ul>
+				<!-- /.navbar-top-links -->
+
+				<div class="navbar-default sidebar" role="navigation">
+					<div class="sidebar-nav navbar-collapse">
+						<ul class="nav" id="side-menu">
+							<li>
+								<a href="main.html"><i class="fa fa-bar-chart-o fa-fw"></i>主页</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-institution fa-fw"></i>内部管理<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">部门管理</a>
+									</li>
+									<li>
+										<a href="">人员管理
+                                </a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-phone fa-fw"></i> 通讯录</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-bug fa-fw"></i> BUG追踪系统</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-tasks fa-fw"></i> 任务管理<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">下发任务</a>
+									</li>
+									<li>
+										<a href="">任务记录</a>
+									</li>
+
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-file-text-o fa-fw"></i> 申请系统<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">新的申请</a>
+									</li>
+									<li>
+										<a href="">申请审核</a>
+									</li>
+									<li>
+										<a href="">申请记录</a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa glyphicon-yen fa-fw"></i>财务</a>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-group fa-fw"></i>客户管理</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-folder fa-fw"></i>文档上传</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-list-alt fa-fw"></i> 报告<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">写报告</a>
+									</li>
+									<li>
+										<a href="">报告总汇</a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+						</ul>
+					</div>
+					<!-- /.sidebar-collapse -->
+				</div>
+				<!-- /.navbar-static-side -->
+			</nav>
+
+		</div>
+		<div class="modal fade" id="me">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">员工详情</h4>
+					</div>
+					<div class="modal-body">
+						<img src="../../images/2.jpg" class="img-circle main-img " />
+						<div class="main-info-1">
+							<p class="fa fa-user"></p>姓名&nbsp;:&nbsp;&nbsp;林潇键
+							<br />
+							<p class="fa fa-circle-o"></p>性别&nbsp;:&nbsp;&nbsp;男
+							<br />
+							<p class="fa fa-phone-square"></p>联系方式&nbsp;:&nbsp;&nbsp;15919791250
+							<br />
+							<p class="fa fa-envelope-o"></p>邮箱&nbsp;:&nbsp;&nbsp;673011332@qq.com
+							<br />
+							<p class="fa fa-smile-o"></p>年龄&nbsp;:&nbsp;&nbsp;20
+							<br/>
+							<p class="fa fa-sun-o"></p>生日&nbsp;:&nbsp;&nbsp;07-06
+							<br />
+							<p class="fa fa-group"></p>部门&nbsp;:&nbsp;&nbsp;技术部
+							<br />
+							<p class="fa fa-search"></p>职位&nbsp;:&nbsp;&nbsp;工程师
+							<br>
+							<p class="fa fa-clock-o"></p>入职时间&nbsp;:&nbsp;&nbsp;2015-02-01
+							<br />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+
+		<div class="container-fluid contain-right">
+			<div class="container-fluid">
+				<form action="" method="post">
+					<div class="title row">
+						<div class="col-lg-11">
+							<h1>
+						编辑用户
+					</h1>
+						</div>
+					</div>
+					<div class="col-lg-12 hr">
+						<hr>
+					</div>
+					<div class="row one">
+						<div class="col-lg-6">
+							<label class="">姓名</label>
+							<input class="form-control" name="name" value="">
+						</div>
+						<div class="col-lg-6">
+							<label class="">所在公司</label>
+							<input class="form-control" name="company" value="">
+						</div>
+					</div>
+					<div class="row two">
+						<div class="col-lg-6">
+							<label class="">职位</label>
+							<input class="form-control" name="position" value="">
+						</div>
+						<div class="col-lg-4 sex">
+							<div class="row sex-title">
+								<label class="">性别</label>
+							</div>
+							<div class=" radio-inline">
+								<input type="radio" name="sex" id="man" value="0" checked="checked">
+								<label class="">男</label>
+							</div>
+							<div class="radio-inline">
+								<input type="radio" name="sex" id="woman" value="1">
+								<label class="">女</label>
+							</div>
+						</div>
+					</div>
+					<div class="row three">
+						<div class="col-lg-6">
+							<label class="">电话</label>
+							<input class="form-control" name="phone" value="">
+						</div>
+						<div class="col-lg-6">
+							<label class="">邮箱</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="" name="email" value="">
+						</div>
+					</div>
+					<div class="row four">
+						<div class="col-lg-12">
+							<label class="">备注</label>
+						</div>
+						<div class="col-lg-12">
+							<textarea class="form-control" rows="4" placeholder="" name="remarks"></textarea>
+
+						</div>
+					</div>
+					<div class="row edit-button">
+						<div class="col-lg-2">
+							<button type="submit" class="btn btn-success">
+								编 辑
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="../../js/bootstrap.min.js"></script>
+		<script src="../../js/metisMenu.min.js"></script>
+		<script src="../../js/raphael-min.js"></script>
+		<script src="../../js/sb-admin-2.js"></script>
+	</body>
+
+</html>

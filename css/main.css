@@ -1,0 +1,565 @@
+#main{
+    padding: 0px;
+    font-family: Microsoft YaHei;
+}
+
+#bar-table{
+    width: 500px;
+    float: left;
+}
+
+#round-table{
+    width: 330px;
+    float: right;
+}
+
+
+/*头部样式*/
+.main-model-dialog{
+	width: 500px;
+}
+.header-info-1{
+	position: relative;
+	left: 30px;
+	top: 5px;
+}
+.main-info-1{
+	width: 400px;
+	position: relative;
+	top: 30px;
+	left: 50px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	margin-bottom: 20px;
+}
+.main-info-1>p{
+	position:relative;
+	margin-right: 10px;
+}
+/*首页样式*/ 
+.main-geader{
+	font-size: 36px;
+}
+.main-img{
+	display: block;
+	position: relative;
+	margin: auto;
+	top: 2px;
+	height: 200px;
+	width: 200px;
+}
+
+.contain-right {
+    background-color:#ffffff;
+}
+@media (min-width: 992px) {
+    .contain-right {
+        margin-left: 250px;
+        border-left: 1px solid #e7e7e7;
+        height:800px;
+    }
+}
+@media (max-width: 700px) {
+    .contain-right {
+        margin-left: 0px;
+        /*height: auto;
+        min-height: 100%;*/
+    }
+}
+
+
+.btn:hover{
+    border-color: #269abc;
+}
+.one,.two,.three,.four{
+    margin-top: 8px;
+}
+.form-group{
+    font-size: 15px;
+}
+.title{
+    margin-top: 22px;
+}
+hr{
+    margin-top: 10px;
+}
+#add-bug{
+    margin-top: 24px;
+    margin-left: -5px;
+}
+.customer-remark{
+    font-size: 14.5px;
+    font-weight: normal;
+}
+.list-tbody{
+    font-size: 14px;
+}
+#serach-staff{
+    height: 34px;
+}
+#serach{
+   margin-bottom: 0px;
+}
+.show-bug{
+    margin-top: 10px;
+}
+.bug-show-local{
+    margin-top: 20px;
+}
+.finish-bug{
+    width: 17px;
+    height: 17px;
+}
+.finish{
+    margin-top: -2.7px;
+}
+.name,.date,.hard{
+    color: #837c7c;
+    margin-left: 64px;
+}
+.name{
+    width: 100px;
+}
+.finish-bug-file{
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+    background-color: #5cb85c !important;
+    border-color: #5cb85c !important;
+}
+.finish-bug-file:hover {
+    background-color: #449d44 !important;
+    border-color: #449d44 !important;
+}
+.finish-bug-file:focus{
+    background-color: #449d44 !important;
+    border-color: #449d44 !important;
+}
+.fa-arrow-left{
+    font-size: 18px;
+}
+@media (min-width:992px ) {
+    .date{
+        margin-left: 20px;
+    }
+    .hard{
+        margin-left: 15px;
+        width: 10px;
+    }
+}
+
+.edit{
+    height: 30px;
+    margin-left: -20px;
+    font-size: 13px;
+}
+.hr{
+    margin-top: -10px;
+    margin-left: -15px;
+    width: 100%;
+}
+.sex{
+    margin-left: 17px;
+}
+.sex-radio{
+    margin-top: 8px;
+}
+.btn-success{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-success:hover{
+    background-color: #286090;
+}
+.add-title{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.add-button{
+    width: 140px;
+    height: 160px;
+}
+#add{
+    width: 127px;
+    height: 120px;
+    font-size: 50px;
+    border-style: dashed;
+    color: #666666;
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.department-test{
+    margin-left:50px ;
+    margin-top: 10px;
+}
+.picture{
+    width: 120px;
+    height: 120px;
+    margin-left:10px;
+    margin-top: 10px;
+}
+.edit-remark-menu{
+    min-width: 100px;
+}
+#Employee-content{
+    margin-top: 25px;
+}
+
+#add-staff-button{
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.bug-finish{
+    color: #837c7c;
+}
+.bug-finish-note{
+    font-size: 15px;
+}
+#show-finish-bug{
+    height: 5px;
+}
+.department{
+   margin-top:10px;
+    margin-bottom: 0px;
+}
+.department>img{
+    height: 110px;
+}
+.department-button{
+    position:relative;
+    left: 16px;
+    top: 5px;
+}
+.department-button>.btn-danger{
+    position: relative;
+    left: 15px;
+}
+#add-department-test{
+    margin-left:40px ;
+    margin-top: 10px;
+}
+.staff-img{
+    margin-top:20px;
+}
+.img{
+    height: 150px !important;
+}
+
+@media (max-width: 700px) {
+    .thumbnail {
+      padding: 4px;
+        width: 141px;
+    }
+}
+#file-font{
+    margin-left: 15px;
+    margin-top: 25px;
+    color: #94c0cd;
+}
+.file{
+   height: 185px !important;
+}
+#file-button{
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.file-name{
+    margin-top: 0px !important;
+    /*padding-left: 35px;*/
+    text-align: center;
+    /*width: 115px;*/
+}
+.file-download{
+    font-size: 11px !important;
+    cursor: pointer;
+}
+.file-delete {
+    font-size: 11px !important;
+    cursor: pointer;
+}
+.file-operation{
+    text-align: center;
+    /*margin-left: 42px;*/
+    /*width: 50px;*/
+}
+.file-img{
+    height: 140px;
+    width: 140px;
+}
+.document-name{
+    padding-left: 45px;
+    margin-top: 0px;
+}
+.input-name{
+    width: 100px;
+    margin-left: 21px;
+    margin-top:-8px ;
+    border-color: #cccccc;
+}
+.input-name:focus{
+    border-style: none none solid none;
+    outline: none;
+}
+.file-base-operation{
+    width: auto;
+    margin-left: 39px;
+}
+.file-cancel{
+    color: #cccccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.file-create{
+    margin-left: -7px;
+    cursor: pointer;
+}
+#add-file{
+    margin-top: 20px;
+   padding-left: 0px;
+}
+#retreat{
+    margin-top: 20px;
+}
+#retreat>button{
+    height: 40px;
+    width: 45px;
+    font-size: 20px;
+}
+#task{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.Distribution>button{
+    margin-top: 24px;
+}
+.department-area{
+    height: 185px;
+}
+
+#finish-task{
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+#hr{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.nufinish-task{
+    padding-left: 0px;
+    margin-left: -35px;
+}
+.finish-difficulty{
+    padding-left: 0px;
+}
+
+.title-left>div{
+   background-color: #0000FF;
+   width: 5px;
+    height: 14.5px;
+    margin-top: 30px;
+}
+.title-right>h5{
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.title-right{
+    margin-left: -70px;
+}
+
+.table-body>tr>td{
+    font-size: 13.5px;
+}
+
+.table-body>tr>.button-group{
+    width: 100px;
+}
+.apply-date{
+    width: 30px;
+}
+.table-condensed>tbody>tr>td{
+    font-size: 13.5px;
+}
+#to{
+    width: 28px;
+    padding: 0px;
+}
+#fin-list{
+    margin-top: 20px;
+}
+
+@media(max-width: 768px){
+    .title-right>h5 {
+        margin-top: -14px;
+        margin-right: 60px;
+        margin-left: 85px;
+    }
+
+    #operate-fin>div{
+        margin-top: 10px;
+    }
+    #operate-fin>div>button{
+        margin-left: 15px;
+    }
+    #to{
+        margin-left: 15.5px;
+    }
+    #to+div+div>button{
+        margin-top: 10px;
+    }
+}
+
+#serach-right{
+    padding-left:0px;
+    margin-left: -15px;
+}
+
+.staff-sex{
+    margin-top: 6px;
+}
+.edit-button{
+    margin-top: 15px;
+}
+.row1>.title-right{
+    margin-top: -30px;
+}
+.row1>.title-left{
+    margin-top: -30px;
+}
+#report-contant{
+    margin-top: 25px;
+}
+#myueditor{
+    margin-top: 30px;
+    height: 250px;
+}
+.demo{
+    margin-top: 70px;
+}
+.monre{
+    margin-top: 30px;
+}
+#week-re{
+    height: 100px;
+}
+#mon-re{
+    height:100px ;
+}
+#re-week{
+    margin-top:25px ;
+}
+#re-mon{
+    margin-top: 25px;
+}
+.staff-report{
+    width: 170px;
+}
+#tl{
+    float: right;
+}
+#record-bg{
+    height:auto;
+}
+
+.reg-pan {
+    position: relative;
+    width: 500px;
+}
+.center {
+    width: auto;
+    display: table;
+    margin: 0px auto;
+    position: relative;
+    top: 110px;
+}
+.reg-reg {
+    margin-left: 10px;
+    float: right;
+}
+.result {
+    margin-top: 10px;
+    text-align: left;
+    color: red;
+}
+/*注册样式*/
+
+/*客户样式*/
+.customer-table{
+	height: 400px;
+}
+.customer-table{
+	padding: 0px;
+}
+#add-customer{
+    display: none;
+}
+#serach{
+    width: 250px;
+    margin-bottom: 0px;
+    float: right;
+}
+#serach-button{
+    height: 34px;
+}
+.panel-heading{
+    height: 100px;
+}
+#tab-list{
+    float: right;
+}
+
+.sex{
+    margin-top: 10px;
+}
+/*申请样式*/
+.check-table-responsive{
+	height: 500px;
+}
+.check-table-condensed{
+	width: 98%;
+}
+.check-page{
+	position: absolute;
+	bottom: 0px;
+}
+.bug-container-fluid{
+	height: 500px;
+}
+/*通讯录样式*/
+#list{
+    width: 888px;
+}
+.list-table-responsive{
+	height: 400px;
+}
+/*人员管理样式*/
+.levelSet{
+	list-style: none;
+	margin:5px 0px 0px -25px;
+	display: none;
+}
+.ul-box{
+	display: none;
+}
+#ul-box{
+	cursor: pointer;
+}
+.li-box{
+	float: left;
+}
+.ul-box > li {
+	border: none;
+	width: 550px;
+	float: left;
+	
+}
+.ul-box>li:nth-child(odd){
+	clear:both;
+}
+.levelMain{
+	height: 1300px;
+}
+.div-box{
+	width: 1200px;
+}

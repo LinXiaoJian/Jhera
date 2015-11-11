@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>注册HERA-HERA企业OA系统</title>
+    <link rel="stylesheet" href="<?=base_url().'css/bootstrap.min.css'?>">
+    <link rel="stylesheet" href="<?=base_url().'css/public2.css'?>">
+    <script type="text/javascript" src="<?=base_url().'js/check/jquery-1.4.2.min.js'?>"></script>
+    <script language="javascript" type="text/javascript" src="<?=base_url().'js/check/jquery.validate.js'?>"></script>
+    <script language="javascript" type="text/javascript" src="<?=base_url().'js/check/validate_expand.js'?>"></script>
+    <script language="javascript" type="text/javascript" src="<?=base_url().'js/check/validate.js'?>"></script>
+
+</head>
+
+<body>
+<style type="text/css">
+    .tipinfo font.error {
+        background: url("<?=base_url().'images/unchecked.jpg'?>") no-repeat left;
+        padding-left: 17px;
+        color: #eb0000;
+        width: 300px;
+        display: block;
+    }
+    .tipinfo font.valid {
+        background: url("<?=base_url().'images/checked.gif'?>") no-repeat left;
+        width: 14px;
+        height: 13px;
+        overflow: hidden;
+        padding: 0;
+        margin: 5px 0 0 5px;
+        display: inline-block;
+    }
+</style>
+<div class="center">
+    <div class="panel panel-primary panel-default reg-pan">
+
+        <div class="panel-heading">
+            <h3 class="panel-title">赫拉</h3>
+        </div>
+        <div class="panel-body">
+
+            <form id="thisForm" method="post" action="reg">
+                <div class="form-group">
+                    <label for="">用户名</label>
+                    <input type="text" class="form-control" id="userName" placeholder="Username" name="userName">
+                    <div class="tipinfo result" id="user"><?php echo form_error('userName'); ?></div>
+
+                </div>
+                <div class="form-group">
+                    <label for="">密码</label>
+                    <input type="password" class="form-control" id="passWord" placeholder="Password" name="passWord">
+                    <div class="tipinfo result" id="pass"><?php echo form_error('password'); ?></div>
+                </div>
+                <div class="form-group">
+                    <label for="">再次输入密码</label>
+                    <input type="password" class="form-control" id="passWordAgain" placeholder="Password" name="passWordAgain"  >
+                    <div class="tipinfo result" id="pass2"></div>
+
+                </div>
+                <div class="form-group">
+                    <label for="">公司名</label>
+                    <input type="text" class="form-control" id="corpName" placeholder="companyname" name="corpName">
+                    <div class="tipinfo result" id="corp"><?php echo form_error('corpName'); ?></div>
+                </div>
+                <div class="form-group">
+                    <label for="">邮箱</label>
+                    <input class="form-control" placeholder="输入你的常用邮箱" name="email" type="email" id="email" >
+                    <div class="tipinfo result" id="ema"><?php echo form_error('email'); ?></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg reg-reg">注册</button>
+                <a href="login" class="btn btn-primary btn-lg reg-reg">登录</a>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        initValidator();
+        console.log($('div.tipinfo').text());
+    });
+    //输入框变回正常 &&$("font").attr("htmlfor")=="userName"    $("font").attr("class")=="error"&&$("font").attr("htmlfor")=="userName"
+    $('#userName').blur(function(){
+        if($("div#user").children("font.error")){
+            $("input#userName").css("border-color","red");
+        }
+    });
+    $('#passWord').blur(function(){
+        if($("div#pass").children("font.error")){
+            $("input#passWord").css("border-color","red");
+        }
+    });
+
+//    $('#corpName').blur(function(){
+//        if($("div#corp").children("font.error")){
+//            $("input#corpName").css("border-color","red");
+//        };
+//    });
+    $('#email').blur(function(){
+        if($("div#ema").children("font.error")){
+            $("input#email").css("border-color","red");
+        };
+    });
+    $('#passWordAgain').blur(function(){
+        if($("div#pass2").children("font.error")){
+            $("input#passWordAgain").css("border-color","red");
+        };
+    });
+    //输入框变回正常
+//    $('#userName').blur(function(){
+//        if($("div#user").children("font.valid")){
+//            $("input#userName").css("border-color","#ccc");
+//        };
+//    });
+//    $('#passWord').blur(function(){
+//        if($("font").attr("class")=="error valid"){
+//            $("input#passWord").css("border-color","#ccc");
+//        };
+//    });
+//    $('#corpName').blur(function(){
+//        if($("font").attr("class")=="error valid"){
+//            $("input#corpName").css("border-color","#ccc");
+//        };
+//    });
+//    $('#email').blur(function(){
+//        if($("font").attr("class")=="error valid"){
+//            $("input#email").css("border-color","#ccc");
+//        };
+//    });
+//    $('#passWordAgain').blur(function(){
+//        if($("font").attr("class")=="error valid"){
+//            $("input#passWordAgain").css("border-color","#ccc");
+//        };
+//    });
+</script>

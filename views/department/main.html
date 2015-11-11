@@ -1,0 +1,594 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="hera管理系统">
+		<title>HERA后台</title>
+		<link rel="stylesheet" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../css/metisMenu.min.css">
+		<link rel="stylesheet" href="../../css/timeline.css">
+		<link rel="stylesheet" href="../../css/sb-admin-2.css">
+		<link rel="stylesheet" href="../../css/morris.css">
+		<link rel="stylesheet" href="../../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<script src="../../js/jquery.min.js"></script>
+		<!-- 配置文件 -->
+		<script type="text/javascript" src="../../ueditor/ueditor.config.js"></script>
+		<!-- 编辑器源码文件 -->
+		<script type="text/javascript" src="../../ueditor/ueditor.all.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="main.html">HERA</a>
+				</div>
+				<!-- /.navbar-header -->
+
+				<ul class="nav navbar-top-links navbar-right">
+					<li class="dropdown tesk">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-alerts">
+							<li>
+								<a href="#">
+									<div>
+										<i class="fa fa-tasks fa-fw"></i> 新任务
+										<span class="pull-right text-muted small">2015-07-06</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">
+									<div>
+										<i class="fa fa-file-text-o fa-fw"></i> 新申请
+										<span class="pull-right text-muted small">2015-07-06</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a class="text-center" href="#">
+									<strong>全部消息</strong>
+									<i class="fa fa-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+						<!-- /.dropdown-alerts -->
+					</li>
+					<!-- /.dropdown -->
+					<li class="dropdown user">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-user">
+							<li><a data-toggle="modal" data-target="#me"><i class="fa fa-user fa-fw"></i> 查看个人资料</a>
+							</li>
+							<li class="divider"></li>
+							<li><a href=""><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+							</li>
+						</ul>
+						<!-- /.dropdown-user -->
+					</li>
+					<!-- /.dropdown -->
+				</ul>
+				<!-- /.navbar-top-links -->
+
+				<div class="navbar-default sidebar" role="navigation">
+					<div class="sidebar-nav navbar-collapse">
+						<ul class="nav" id="side-menu">
+							<li>
+								<a href="main.html"><i class="fa fa-bar-chart-o fa-fw"></i>主页</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-institution fa-fw"></i>内部管理<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">部门管理</a>
+									</li>
+									<li>
+										<a href="">人员管理
+                                </a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-phone fa-fw"></i> 通讯录</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-bug fa-fw"></i> BUG追踪系统</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-tasks fa-fw"></i> 任务管理<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">下发任务</a>
+									</li>
+									<li>
+										<a href="">任务记录</a>
+									</li>
+
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-file-text-o fa-fw"></i> 申请系统<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">新的申请</a>
+									</li>
+									<li>
+										<a href="">申请审核</a>
+									</li>
+									<li>
+										<a href="">申请记录</a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa glyphicon-yen fa-fw"></i>财务</a>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-group fa-fw"></i>客户管理</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-folder fa-fw"></i>文档上传</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-list-alt fa-fw"></i> 报告<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">写报告</a>
+									</li>
+									<li>
+										<a href="">报告总汇</a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+						</ul>
+					</div>
+					<!-- /.sidebar-collapse -->
+				</div>
+				<!-- /.navbar-static-side -->
+			</nav>
+
+		</div>
+		<div class="modal fade" id="me">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">员工详情</h4>
+					</div>
+					<div class="modal-body">
+						<img src="../../images/2.jpg" class="img-circle main-img " />
+						<div class="main-info-1">
+							<p class="fa fa-user"></p>姓名&nbsp;:&nbsp;&nbsp;林潇键
+							<br />
+							<p class="fa fa-circle-o"></p>性别&nbsp;:&nbsp;&nbsp;男
+							<br />
+							<p class="fa fa-phone-square"></p>联系方式&nbsp;:&nbsp;&nbsp;15919791250
+							<br />
+							<p class="fa fa-envelope-o"></p>邮箱&nbsp;:&nbsp;&nbsp;673011332@qq.com
+							<br />
+							<p class="fa fa-smile-o"></p>年龄&nbsp;:&nbsp;&nbsp;20
+							<br/>
+							<p class="fa fa-sun-o"></p>生日&nbsp;:&nbsp;&nbsp;07-06
+							<br />
+							<p class="fa fa-group"></p>部门&nbsp;:&nbsp;&nbsp;技术部
+							<br />
+							<p class="fa fa-search"></p>职位&nbsp;:&nbsp;&nbsp;工程师
+							<br>
+							<p class="fa fa-clock-o"></p>入职时间&nbsp;:&nbsp;&nbsp;2015-02-01
+							<br />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<div class="container-fluid contain-right levelMain">
+			<div class="row">
+				<div class="col-lg-10">
+					<h1>人员管理</h1>
+				</div>
+				<div class="col-lg-2">
+					<a href="">
+						<button type="button" class="btn btn-success finish-bug-file"><i class="fa fa-file"></i></button>
+					</a>
+				</div>
+			</div>
+			<div id="Employee-content">
+				<!-- 标签页 -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">人员</a></li>
+					<li role="presentation"><a href="#add-staff" aria-controls="profile" role="tab" data-toggle="tab">添加人员</a></li>
+				</ul>
+				<!-- 标签页内容 -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="home">
+						<!--显示人员-->
+						<div class="row">
+
+							<div class="col-lg-2 staff-img">
+								<a id="" href="#" class="thumbnail stafflist" data-toggle="modal" data-target="#staffModal">
+									<img src="../../images/2.jpg" class="img" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="add-staff">
+						<!--添加人员-->
+						<form action="" method="post">
+							<div class="row">
+								<div class="col-lg-6">
+									<label class="add-title">姓名</label>
+									<input type="text" class="form-control" placeholder="" name="name">
+								</div>
+								<div class="col-lg-6">
+									<label class="add-title">电话</label>
+									<input type="text" class="form-control" placeholder="" name="phone">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label class="add-title">邮箱</label>
+									<input type="email" class="form-control" placeholder="" name="email">
+								</div>
+								<div class="col-lg-6">
+									<label class="add-title">职位</label>
+									<input type="text" class="form-control" placeholder="" name="position">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label class="add-title">学历</label>
+									<select class="form-control" name="education">
+										<option>高中</option>
+										<option>大专</option>
+										<option>本科</option>
+										<option>研究生</option>
+										<option>硕士</option>
+										<option>博士</option>
+									</select>
+								</div>
+								<div class="col-lg-6">
+									<label class="add-title">入职时间</label>
+									<input type="date" class="form-control" placeholder="" name="entrytime">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label class="add-title">出生日期</label>
+									<input type="date" class="form-control" name="birthday">
+								</div>
+								<div class="col-lg-6">
+									<label class="add-title">部门</label>
+
+									<select class="form-control" name="department">
+										<option value="<?=$_alldeplist['dep_id'] ?>">
+										</option>
+									</select>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label class="add-title">权限</label>
+									<input type="text" class="form-control" name="level">
+								</div>
+								<div class="col-lg-4 ">
+									<div class="row sex-title">
+										<div class="col-lg-3">
+											<label class="add-title">性别</label>
+										</div>
+									</div>
+									<div class="row staff-sex">
+										<div class="col-lg-3">
+											<input type="radio" name="sex" value="男">男
+										</div>
+										<div class="col-lg-3">
+											<input type="radio" name="sex" value="女">女
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label class="add-title">赋予账号</label>
+									<input type="text" class="form-control" name="username">
+								</div>
+								<div class="col-lg-6">
+									<label class="add-title">赋予密码</label>
+									<input type="password" class="form-control" name="password">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-lg-6 div-box">
+									<span class="glyphicon glyphicon-plus" aria-hidden="true" id="ul-box"></span>
+									<label class="add-title" >赋予权限</label>
+									<ul class="list-group ul-box">
+										<li class="list-group-item">
+											<input type="checkbox" name="staff">进入人员管理
+											<ul class="levelSet staff">
+												<li>
+													<input type="checkbox">添加人员</li>
+												<li>
+													<input type="checkbox">修改人员</li>
+												<li>
+													<input type="checkbox">删除人员</li>
+											</ul>
+										</li>
+
+										<li class="list-group-item">
+											<input type="checkbox" name="department">进入部门管理
+											<ul class="levelSet department">
+												<li>
+													<input type="checkbox">添加部门</li>
+												<li>
+													<input type="checkbox">修改部门</li>
+												<li>
+													<input type="checkbox">删除部门</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="list">进入通讯录
+											<ul class="levelSet list">
+												<li>
+													<input type="checkbox">添加通讯录</li>
+												<li>
+													<input type="checkbox">修改通讯录</li>
+												<li>
+													<input type="checkbox">删除通讯录</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="bug">进入bug追踪系统
+											<ul class="levelSet bug">
+												<li>
+													<input type="checkbox">添加bug</li>
+												<li>
+													<input type="checkbox">修改bug</li>
+												<li>
+													<input type="checkbox">删除bug</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="task">进入任务管理
+											<ul class="levelSet task">
+												<li>
+													<input type="checkbox">添加任务</li>
+												<li>
+													<input type="checkbox">修改任务</li>
+												<li>
+													<input type="checkbox">删除任务</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="apply">进入申请系统
+											<ul class="levelSet apply">
+												<li>
+													<input type="checkbox">添加申请</li>
+												<li>
+													<input type="checkbox">审核申请</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="finance">进入财务
+											<ul class="levelSet finance">
+												<li>
+													<input type="checkbox">记录财务</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="customer">进入客户管理
+											<ul class="levelSet customer">
+												<li>
+													<input type="checkbox">添加客户</li>
+												<li>
+													<input type="checkbox">修改客户</li>
+												<li>
+													<input type="checkbox">删除客户</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="file">进入文档上传
+											<ul class="levelSet file">
+												<li>
+													<input type="checkbox">添加文档</li>
+												<li>
+													<input type="checkbox">删除文档</li>
+											</ul>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" name="report">进入报告
+											<ul class="levelSet report">
+												<li>
+													<input type="checkbox">添加报告</li>
+												<li>
+													<input type="checkbox">删除报告</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<label class="add-title">员工头像</label>
+									<input type="file" class="form-control">
+								</div>
+							</div>
+							<div class="row" id="add-staff-button">
+								<div class="col-lg-2">
+									<button type="submit" class="btn btn-primary">添 加</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="staffModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" style="font-weight: bold">员工详情</h4>
+						</div>
+
+						<div class="modal-body">
+							<p id="infoid" style="display: none"></p>
+							<label>姓名:</label>
+							<p id="infoname"></p>
+							<label>性别</label>
+							<p id="infosex"></p>
+							<label>电话</label>
+							<p id="infophone"></p>
+							<label>邮箱</label>
+							<p id="infoemail"></p>
+							<label>年龄</label>
+							<p id="infoage"></p>
+							<label>出生日期</label>
+							<p id="infobirthday"></p>
+							<label>所属部门</label>
+							<p id="infomanager"></p>
+							<label>职位</label>
+							<p id="infoposition"></p>
+							<label>入职时间</label>
+							<p id="infoentrytime"></p>
+						</div>
+
+						<div class="modal-footer">
+							<div class="row">
+								<div class="col-lg-1">
+									<button id="update" type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#repairModal">修改</button>
+								</div>
+								<div class="col-lg-1 col-md-offset-9">
+									<button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<div class="modal fade" id="repairModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">修改资料</h4>
+						</div>
+						<form action="" method="post" enctype="multipart/form-data">
+							<div class="modal-body">
+								<input type="text" id="upid" name="upid" style="display: none">
+								<label>姓名:</label>
+								<input type="text" class="form-control" id="upname" name="upname">
+								<label>电话</label>
+								<input type="text" class="form-control" id="upphone" name="upphone">
+								<label>邮箱</label>
+								<input type="email" class="form-control" id="upemail" name="upemail">
+								<label>所属部门</label>
+								<select class="form-control" name="department">
+									<option value="" id="upmanager"></option>
+									<option value="" name="upmanager">
+									</option>
+								</select>
+								<label>职位</label>
+								<input type="text" class="form-control" id="upposition" name="upposition">
+								<label>头像</label>
+								<input type="file" name="pic">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" id="delete">删除</button>
+								<button type="submit" class="btn btn-primary">修改</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</form>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<script src="../../js/bootstrap.min.js"></script>
+		<script src="../../js/metisMenu.min.js"></script>
+		<script src="../../js/raphael-min.js"></script>
+		<script src="../../js/sb-admin-2.js"></script>
+		<script src="../../js/dep_main.js"></script>
+		<script>
+			$(document).ready(function() {
+				jQuery.level();
+				jQuery.ul();
+			});
+			$(".stafflist").click(function() {
+					var sid = $(this).attr("id");
+					$('#infoname').html($('#name' + sid).html());
+					$('#infosex').html($('#sex' + sid).html());
+					$('#infophone').html($('#phone' + sid).html());
+					$('#infoemail').html($('#email' + sid).html());
+					$('#infoage').html($('#age' + sid).html());
+					$('#infobirthday').html($('#birthday' + sid).html());
+					$('#infoentrytime').html($('#etime' + sid).html());
+					$('#infoposition').html($('#position' + sid).html());
+					$('#infomanager').html($('#manager' + sid).html());
+					$('#infoid').html(sid);
+				})
+				//    修改资料
+			 $("#update").click(function() {
+				$('#upname').val($('#infoname').html())
+				$('#upphone').val($('#infophone').html());
+				$('#upemail').val($('#infoemail').html());
+				$('#upmanager').text($('#infomanager').html());
+				$('#upposition').val($('#infoposition').html());
+				$('#upid').val($('#infoid').html());
+			})
+			 $("#delete").click(function() {
+				var id = $('#upid').val();
+				del_staff(id);
+			})
+
+			function del_staff(id) {
+				$.ajax({
+					url: "del_staff",
+					type: "POST",
+					data: {
+						id: id
+					},
+					dataType: "JSON",
+					error: function() {
+						console.log("fail to connect");
+					},
+					success: function() {
+						location.reload();
+					}
+				});
+			}
+		</script>
+
+	</body>
+
+</html>

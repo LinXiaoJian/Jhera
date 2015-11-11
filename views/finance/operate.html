@@ -1,0 +1,343 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="hera管理系统">
+		<title>HERA后台</title>
+		<link rel="stylesheet" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../css/metisMenu.min.css">
+		<link rel="stylesheet" href="../../css/timeline.css">
+		<link rel="stylesheet" href="../../css/sb-admin-2.css">
+		<link rel="stylesheet" href="../../css/morris.css">
+		<link rel="stylesheet" href="../../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<script src="../../js/jquery.min.js"></script>
+		<!-- 配置文件 -->
+		<script type="text/javascript" src="../../ueditor/ueditor.config.js"></script>
+		<!-- 编辑器源码文件 -->
+		<script type="text/javascript" src="../../ueditor/ueditor.all.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="main.html">HERA</a>
+				</div>
+				<!-- /.navbar-header -->
+
+				<ul class="nav navbar-top-links navbar-right">
+					<li class="dropdown tesk">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-alerts">
+							<li>
+								<a href="#">
+									<div>
+										<i class="fa fa-tasks fa-fw"></i> 新任务
+										<span class="pull-right text-muted small">2015-07-06</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">
+									<div>
+										<i class="fa fa-file-text-o fa-fw"></i> 新申请
+										<span class="pull-right text-muted small">2015-07-06</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a class="text-center" href="#">
+									<strong>全部消息</strong>
+									<i class="fa fa-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+						<!-- /.dropdown-alerts -->
+					</li>
+					<!-- /.dropdown -->
+					<li class="dropdown user">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-user">
+							<li><a data-toggle="modal" data-target="#me"><i class="fa fa-user fa-fw"></i> 查看个人资料</a>
+							</li>
+							<li class="divider"></li>
+							<li><a href=""><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+							</li>
+						</ul>
+						<!-- /.dropdown-user -->
+					</li>
+					<!-- /.dropdown -->
+				</ul>
+				<!-- /.navbar-top-links -->
+
+				<div class="navbar-default sidebar" role="navigation">
+					<div class="sidebar-nav navbar-collapse">
+						<ul class="nav" id="side-menu">
+							<li>
+								<a href="main.html"><i class="fa fa-bar-chart-o fa-fw"></i>主页</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-institution fa-fw"></i>内部管理<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">部门管理</a>
+									</li>
+									<li>
+										<a href="">人员管理
+                                </a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-phone fa-fw"></i> 通讯录</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-bug fa-fw"></i> BUG追踪系统</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-tasks fa-fw"></i> 任务管理<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">下发任务</a>
+									</li>
+									<li>
+										<a href="">任务记录</a>
+									</li>
+
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-file-text-o fa-fw"></i> 申请系统<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">新的申请</a>
+									</li>
+									<li>
+										<a href="">申请审核</a>
+									</li>
+									<li>
+										<a href="">申请记录</a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa glyphicon-yen fa-fw"></i>财务</a>
+								<!-- /.nav-second-level -->
+							</li>
+							<li>
+								<a href=""><i class="fa fa-group fa-fw"></i>客户管理</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-folder fa-fw"></i>文档上传</a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-list-alt fa-fw"></i> 报告<span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse">
+									<li>
+										<a href="">写报告</a>
+									</li>
+									<li>
+										<a href="">报告总汇</a>
+									</li>
+								</ul>
+								<!-- /.nav-second-level -->
+							</li>
+						</ul>
+					</div>
+					<!-- /.sidebar-collapse -->
+				</div>
+				<!-- /.navbar-static-side -->
+			</nav>
+
+		</div>
+		<div class="modal fade" id="me">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">员工详情</h4>
+					</div>
+					<div class="modal-body">
+						<img src="../../images/2.jpg" class="img-circle main-img " />
+						<div class="main-info-1">
+							<p class="fa fa-user"></p>姓名&nbsp;:&nbsp;&nbsp;林潇键
+							<br />
+							<p class="fa fa-circle-o"></p>性别&nbsp;:&nbsp;&nbsp;男
+							<br />
+							<p class="fa fa-phone-square"></p>联系方式&nbsp;:&nbsp;&nbsp;15919791250
+							<br />
+							<p class="fa fa-envelope-o"></p>邮箱&nbsp;:&nbsp;&nbsp;673011332@qq.com
+							<br />
+							<p class="fa fa-smile-o"></p>年龄&nbsp;:&nbsp;&nbsp;20
+							<br/>
+							<p class="fa fa-sun-o"></p>生日&nbsp;:&nbsp;&nbsp;07-06
+							<br />
+							<p class="fa fa-group"></p>部门&nbsp;:&nbsp;&nbsp;技术部
+							<br />
+							<p class="fa fa-search"></p>职位&nbsp;:&nbsp;&nbsp;工程师
+							<br>
+							<p class="fa fa-clock-o"></p>入职时间&nbsp;:&nbsp;&nbsp;2015-02-01
+							<br />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<div class="container-fluid contain-right">
+			<div class="row">
+				<div class="col-lg-1 title-left">
+					<div></div>
+				</div>
+				<div class="col-lg-4 title-right">
+					<h5>财务操作</h5>
+				</div>
+			</div>
+			<div class="row" id="operate-fin">
+				<form id="myform">
+					<div class="col-lg-2">
+						<select class="form-control" name="opetype">
+							<option value="支出">支出</option>
+							<option value="收入">收入</option>
+							<option value="预算">预算</option>
+							<option value="发票">发票</option>
+						</select>
+					</div>
+					<div class="col-lg-3">
+						<input type="text" class="form-control" placeholder="金额" name="money">
+					</div>
+					<div class="col-lg-6">
+						<input type="text" class="form-control" placeholder="用途" name="use">
+					</div>
+					<div class="col-lg--2">
+						<button class="btn btn-primary" type="button" id="record">记 录</button>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-lg-1 title-left">
+					<div></div>
+				</div>
+				<div class="col-lg-4 title-right">
+					<h5>财务记录</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-10">
+					<h6>搜索</h6>
+				</div>
+			</div>
+			<div class="row">
+				<form action="" method="post">
+					<div class="col-lg-3">
+						<input type="date" class="form-control" name="findtime">
+					</div>
+					<div class="col-lg-1" id="to">
+						<h5>-到-</h5>
+					</div>
+					<div class="col-lg-3">
+						<input type="date" class="form-control" name="finaltime">
+					</div>
+					<div class="col-lg-2">
+						<button class="btn btn-primary" type="submit" id="select">搜 索</button>
+					</div>
+				</form>
+			</div>
+			<div class="table-responsive" id="fin-list">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>属性</th>
+							<th>金额</th>
+							<th>用途</th>
+							<th>记录日期</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						<tr>
+							<td>
+								支出
+							</td>
+							<td>
+								1000
+							</td>
+							<td>
+								KTV
+							</td>
+							<td>
+								2015-09-08
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="col-sm-6 check-page">
+					<div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
+						<ul class="pagination">
+							<!--disabled-->
+							<li class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
+								<a href="">上一页</a>
+							</li>
+
+							<li class="paginate_button active" aria-controls="dataTables-example" tabindex="0">
+								<a href="">1
+															</a>
+							</li>
+
+							<li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
+								<a href="">下一页</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('#record').click(function() {
+				$.ajax({
+					type: "POST",
+					url: "",
+					data: $('#myform').serialize(),
+					dataType: "JSON",
+					error: function() {
+						console.log('fail to connect');
+					},
+					success: function(data, state) {
+						if (data.result == true) {
+							location.reload();
+						} else {
+							alert(data.result);
+						}
+					}
+				});
+			});
+		</script>
+		<script src="../../js/bootstrap.min.js"></script>
+		<script src="../../js/metisMenu.min.js"></script>
+		<script src="../../js/raphael-min.js"></script>
+		<script src="../../js/sb-admin-2.js"></script>
+	</body>
+
+</html>
